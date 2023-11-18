@@ -1,0 +1,61 @@
+version(1);
+
+project_name = "Hello World";
+
+patterns = {
+	"*.c",
+	"*.cpp",
+	"*.ds",
+	"*.h",
+	"*.bat",
+	"*.sh",
+	"*.4coder",
+};
+
+blacklist_patterns = {
+	".*",
+};
+
+load_paths = {
+	{
+		{ {"."}, .recursive = true, .relative = true }, .os = "win"
+	},
+};
+
+command_list = {
+	{
+		.name = "build_ui_test",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd = {
+			{ "test\ui\build.bat", .os = "win" },
+		},
+	},
+	{
+		.name = "build_ui_hash_test",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd = {
+			{ "test\ui\hash.bat", .os = "win" },
+		},
+	},
+	
+	{
+		.name = "run",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd = {
+			{ "run.bat", .os = "win" },
+		},
+	},
+};
+
+fkey_command[1] = "build_ui_test";
+fkey_command[2] = "build_ui_hash_test";
+fkey_command[3] = "run";

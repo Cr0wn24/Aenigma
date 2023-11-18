@@ -1,0 +1,21 @@
+- Hand cursor when hovering something interactable
+- More exakt scrollbar, it is a bit off
+- OPTIMIZE! ! !
+- MORE TESTING ! ! !
+	- Especially multiple windows
+	- Indenting the color picker
+	- Do some weird shit and see what happens
+- Be able to place buttons without having a window. (the screen is an invisible window)
+- Cleanup of the layout system
+- Format version of the buttons
+
+- Buttons
+	- Radio button
+	- Nicer color picker
+	- Toggle
+	- Charts?
+		- Pie chart
+		- Bar chart
+		- Line chart
+	- Diagrams?
+	- Input box

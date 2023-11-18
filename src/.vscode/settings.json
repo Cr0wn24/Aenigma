@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "algorithm": "c",
+        "xutility": "c"
+    }
+}

@@ -1,0 +1,8 @@
+- Pushbuffer
+- Audio
+- Animations
+- More maps
+- Multithreading
+- Be able to place down activators in the map editor
+- Fix the UI in the bitmap editor
+- Add a menu
